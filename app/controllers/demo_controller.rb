@@ -1,7 +1,12 @@
 class DemoController < ApplicationController
 
-  layout false
+	layout false
   
-  def index
-  end
+	def index
+	end
+
+	def hello
+		redirect_to(:controller => 'demo', :action => 'index')
+	end
+
 end
