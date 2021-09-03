@@ -7,4 +7,6 @@ Rails.application.routes.draw do
 	get 'new/index'
 	get 'new/another'
 
+	# get ":controller(/:action(/:id(/:page)))"
+
 end
