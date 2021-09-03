@@ -6,7 +6,6 @@ class DemoController < ApplicationController
 	end
 
 	def hello
-		redirect_to(:controller => 'demo', :action => 'index')
 	end
 
 end
