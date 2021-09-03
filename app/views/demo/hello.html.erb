@@ -8,7 +8,11 @@
 <%="hello, #{target}"%>
 
 <br />
-<% 3.times do |n| %>
-	<%="#{n}"%>
+<% @array.each do |item| %>
+	<%="#{item}"%>
 	<br />
 <% end %>
+
+<br />
+
+<%= link_to('index page', {:action => 'index'}) %>
