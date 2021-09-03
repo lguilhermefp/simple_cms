@@ -4,8 +4,8 @@ Rails.application.routes.draw do
 
 	get 'demo/index'
 	get 'demo/hello'
-	get 'demo/about_us'
-	get 'demo/contact_us'
+	get 'demo/about'
+	get 'demo/contact'
 	get 'new/index'
 	get 'new/another'
 

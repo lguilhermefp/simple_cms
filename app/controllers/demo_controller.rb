@@ -11,15 +11,20 @@ class DemoController < ApplicationController
 		@page = params[:page]
 	end
 
-	def about_us
+	def about
 		render('about_us')
 	end
 
-	def contact_us
+	def contact
 		@country = params[:country]
-		@phone = '(800) 555-6789' if @country == 'us' || @country == 'ca'
-		@phone = '(020) 7946 1234' if @country == 'uk'
-		@phone = '+1 (987) 654-3210' if @country == nil
+		if ['us', 'ca'].include?(@country)
+			@phone = '(800) 555-6789' 
+		elsif ['uk'].include?(@country)
+			@phone = '(020) 7946 1234'
+		else
+			@phone = '+1 (987) 654-3210'
+		end
+		render('contact_us')
 	end
 
 end

@@ -1,3 +1,15 @@
 <h1> this is the contact page </h1>
-<%= link_to('about us', {:action => 'about_us'}) %>
-<%= @phone %>
+<h4>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae ante at mauris tincidunt lacinia. Quisque aliquet nibh id ipsum tempus aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam accumsan, erat a rhoncus dictum, eros mi dapibus tortor, non mollis diam justo non dui. Maecenas consequat faucibus ligula vitae sodales. Morbi efficitur, justo a feugiat placerat, massa dui aliquam sapien, quis pulvinar neque elit sed nulla. Praesent blandit tortor id eros malesuada, in pretium felis lobortis. Maecenas at nisl pharetra, pharetra turpis et, convallis quam. Nullam sollicitudin in est eget condimentum. Proin auctor dui et mi hendrerit malesuada. Sed scelerisque lorem vel augue faucibus hendrerit. In dignissim elit vestibulum egestas gravida.
+	<br /><br/>
+	Proin nisi nisi, maximus id elit quis, efficitur efficitur orci. Praesent convallis vel sapien vel dapibus. Nunc vestibulum mauris tortor. In vulputate nisl quis suscipit molestie. Quisque eget eleifend turpis. Donec facilisis.
+</h4>
+<%= link_to('about us', {:action => 'about'}) %>
+<br /><br />
+<h5>
+	our email:
+	<%= mail_to('luis.guilherme.fernandes.2@gmail.com') %>
+	<br />
+	our phone:
+	<%= @phone %>
+</h5>
